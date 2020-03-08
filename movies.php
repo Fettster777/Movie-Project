@@ -42,12 +42,23 @@
 <html>
     <head>
 	    <title>Movies</title>
+		<link rel="stylesheet" type="text/css" href="./movies.css">
     </head>
     <body>
+		<br />
+		<br />
+		<center><img src = "./filmreel1.png" alt = "film reel" class="center" width="300" height="200"></center>
+		<br />
+		<br />
         <h2 align = "center">Catalog Listing of my Movies on DVD/Bluray</h2>
+		<!-- Table Below is populated from MySQL movies Database using php code and SQL statement to pull table in alphabetical order by title -->
         <table border="2" align="center">
         	<tr><th>Year</th><th>Title</th><th>Director</th><th>Runtime</th><th>Format</th><th>Rating</th><th>Genre</th><th>RT%</th></tr>
             <?php echo $strTableBlock ?>
         </table>
+		<br />
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;<a href = "http://www.imdb.com">IMDB - Internet Movie Database</a>
+		<br /><br />
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;<a href = "http://rottentomatoes.com">Rotten Tomatoes</a>
     </body>
 </html> 
